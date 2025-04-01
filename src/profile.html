@@ -181,14 +181,14 @@
                             </path>
                         </svg>
                     </a>
-                    <a href="https://www.linkedin.com/in/willy-mutesa-683b47278/" target="_blank" class="cursor-pointer flex items-center justify-center w-20 h-20 rounded-full border-neutral-700 border-1">
+                    <a href="https://medium.com/@mutesawilly682" target="_blank" class="cursor-pointer flex items-center justify-center w-20 h-20 rounded-full border-neutral-700 border-1">
                         <svg class="fill-neutral-500" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                             <path
                                 d="M18.05,16c0,5.018-4.041,9.087-9.025,9.087S0,21.018,0,16,4.041,6.913,9.025,6.913s9.025,4.069,9.025,9.087m9.901,0c0,4.724-2.02,8.555-4.513,8.555s-4.513-3.831-4.513-8.555,2.02-8.555,4.512-8.555,4.513,3.83,4.513,8.555m4.05,0c0,4.231-.71,7.664-1.587,7.664s-1.587-3.431-1.587-7.664,.71-7.664,1.587-7.664,1.587,3.431,1.587,7.664">
                             </path>
                         </svg>
                     </a>
-                    <a href="https://medium.com/@mutesawilly682" target="_blank" class="cursor-pointer flex items-center justify-center w-20 h-20 rounded-full border-neutral-700 border-1">
+                    <a href="https://www.linkedin.com/in/willy-mutesa-683b47278/" target="_blank" class="cursor-pointer flex items-center justify-center w-20 h-20 rounded-full border-neutral-700 border-1">
                         <svg  class="fill-neutral-500" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                             <path
                                 d="M26.111,3H5.889c-1.595,0-2.889,1.293-2.889,2.889V26.111c0,1.595,1.293,2.889,2.889,2.889H26.111c1.595,0,2.889-1.293,2.889-2.889V5.889c0-1.595-1.293-2.889-2.889-2.889ZM10.861,25.389h-3.877V12.87h3.877v12.519Zm-1.957-14.158c-1.267,0-2.293-1.034-2.293-2.31s1.026-2.31,2.293-2.31,2.292,1.034,2.292,2.31-1.026,2.31-2.292,2.31Zm16.485,14.158h-3.858v-6.571c0-1.802-.685-2.809-2.111-2.809-1.551,0-2.362,1.048-2.362,2.809v6.571h-3.718V12.87h3.718v1.686s1.118-2.069,3.775-2.069,4.556,1.621,4.556,4.975v7.926Z"
@@ -205,24 +205,25 @@
                 </div>
             </div>
             </div>
-            <div class="flex flex-col items-stretch justify-between bg-black w-[40%] rounded-4xl h-[85%] p-[50px]">
+            <form id="contact-form" class="flex flex-col items-stretch justify-between bg-black w-[40%] rounded-4xl h-[85%] p-[50px]">
                 <h1 class="text-6xl text-neutral-400 font-medium">Share your contact info, and we'll get in touch..</h1>
                 <div class="w-full flex flex-col items-stretch justify-between gap-y-[35px]">
                     <div class="flex flex-col items-stretch justify-between">
                         <label class="text-left text-2xl text-neutral-400" for="name">Your name*</label>
-                        <input id="name" type="text" class="appearance-none text-left text-2xl text-neutral-300 border-b-1 border-neutral-500 outline-0 outline-offset-0">
+                        <input id="name" type="text" class="appearance-none bg-transparent text-neutral-400 text-left text-2xl fill-none border-b-1 border-neutral-500 outline-0 outline-offset-0">
                     </div>
                     <div class="flex flex-col items-stretch justify-between">
                         <label class="text-left text-2xl text-neutral-400" for="Email">Email*</label>
-                        <input id="Email" type="text" class="appearance-none text-left text-2xl text-neutral-300 border-b-1 border-neutral-500 outline-0 outline-offset-0">
+                        <input id="Email" type="email" class="bg-transparent appearance-none text-neutral-400 text-left text-2xl fill-none border-b-1 border-neutral-500 outline-0 outline-offset-0">
                     </div>
                     <div class="flex flex-col items-stretch justify-between">
                         <label class="text-left text-2xl text-neutral-400" for="WhatsApp">WhatsApp Number*</label>
-                        <input id="WhatsApp" type="text" class="appearance-none text-left text-2xl text-neutral-300 border-b-1 border-neutral-500 outline-0 outline-offset-0">
+                        <input id="WhatsApp" type="tel" class="appearance-none bg-transparent  text-neutral-400 text-left text-2xl border-b-1 fill-none border-neutral-500 outline-0 outline-offset-0">
                     </div>
                 </div>
-                <button type="button" class="cursor-pointer text-3xl text-neutral-400 bg-neutral-900 w-full h-20 rounded-[150px]">Let's Talk</button>
-            </div>
+                <button type="submit" class="cursor-pointer text-3xl text-neutral-400 bg-neutral-900 w-full h-20 rounded-[150px]">Let's Talk</button>
+                <!-- <p id="status-message" class="text-neutral-300 text-2xl"></p> -->
+            </form>
         </section>
 
         <!-- Footer for the Home Page Here... -->
@@ -326,5 +327,28 @@
             </div>
         </footer>
     </section>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script>
+        emailjs.init("QuYSpzAfYcjqMvwCC");
+
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            emailjs.send("service_kqdbe7b", "template_liy60d9", {
+                name: document.getElementById("name").value,
+                email: document.getElementById("Email").value,
+                number: document.getElementById("WhatsApp").value
+            }).then(function (response) {
+                console.log("Email sent successfully:", response);
+                setTimeout(() => {
+                    event.target.reset(); // Reset form fields
+                }, 0); // Instantly reset
+            }, function (error) {
+                console.error("Error sending email:", error);
+            });
+        });
+    </script>
 </body>
 </html>
