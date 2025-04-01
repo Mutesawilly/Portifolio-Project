@@ -210,15 +210,15 @@
                 <div class="w-full flex flex-col items-stretch justify-between gap-y-[35px]">
                     <div class="flex flex-col items-stretch justify-between">
                         <label class="text-left text-2xl text-neutral-400" for="name">Your name*</label>
-                        <input id="name" type="text" class="text-left text-2xl text-neutral-300 border-b-1 border-neutral-500 outline-0 outline-offset-0">
+                        <input id="name" type="text" class="appearance-none text-left text-2xl text-neutral-300 border-b-1 border-neutral-500 outline-0 outline-offset-0">
                     </div>
                     <div class="flex flex-col items-stretch justify-between">
                         <label class="text-left text-2xl text-neutral-400" for="Email">Email*</label>
-                        <input id="Email" type="text" class="text-left text-2xl text-neutral-300 border-b-1 border-neutral-500 outline-0 outline-offset-0">
+                        <input id="Email" type="text" class="appearance-none text-left text-2xl text-neutral-300 border-b-1 border-neutral-500 outline-0 outline-offset-0">
                     </div>
                     <div class="flex flex-col items-stretch justify-between">
                         <label class="text-left text-2xl text-neutral-400" for="WhatsApp">WhatsApp Number*</label>
-                        <input id="WhatsApp" type="text" class="text-left text-2xl text-neutral-300 border-b-1 border-neutral-500 outline-0 outline-offset-0">
+                        <input id="WhatsApp" type="text" class="appearance-none text-left text-2xl text-neutral-300 border-b-1 border-neutral-500 outline-0 outline-offset-0">
                     </div>
                 </div>
                 <button type="button" class="cursor-pointer text-3xl text-neutral-400 bg-neutral-900 w-full h-20 rounded-[150px]">Let's Talk</button>
@@ -234,10 +234,10 @@
                         <p class="text-neutral-600 text-3xl font-medium uppercase">CATALOG</p>
                     </div>
                     <ul class="text-neutral-400 font-normal text-[28px] gap-y-[20px]">
-                        <li><a href="index.html#Index">Index</a></li>
-                        <li><a href="#About">About</a></li>
-                        <li><a href="index.html#Latest Work">Latest Work</a></li>
-                        <li><a href="index.html#Experience">Experience</a></li>
+                        <li class="hover:text-neutral-200"><a href="index.html#Index">Index</a></li>
+                        <li class="hover:text-neutral-200"><a href="#About">About</a></li>
+                        <li class="hover:text-neutral-200"><a href="index.html#Latest Work">Latest Work</a></li>
+                        <li class="hover:text-neutral-200"><a href="index.html#Experience">Experience</a></li>
                     </ul>
                 </div>
                 <div class="flex flex-col justify-between items-stretch gap-y-[20px]">
@@ -246,8 +246,8 @@
                         <p class="text-neutral-600 text-3xl font-medium uppercase">Profile</p>
                     </div>
                     <ul class="text-neutral-400 font-normal text-[28px] gap-y-[20px]">
-                        <li><a href="#Skills">Skills</a></li>
-                        <li><a href="#Contact">Contact</a></li>
+                        <li class="hover:text-neutral-200"><a href="#Skills">Skills</a></li>
+                        <li class="hover:text-neutral-200"><a href="#Contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="flex justify-between items-stretch w-[55%] h-full gap-x-[50px]">
@@ -281,8 +281,28 @@
                         <p class="text-neutral-600 text-[28px] font-medium uppercase">CONTACT US</p>
                     </div>
                     <ul class="text-neutral-400 font-normal text-2xl ">
-                        <li>+250 798751716</li>
-                        <li>mutesawilly682@gmail.com</li>
+                        <li>
+                            <div class="relative group">
+                                <input id="number" type="text" value="+250 798751716"
+                                    class="hover:text-neutral-200 cursor-pointer text-left focus:outline-none appearance-none"
+                                    onclick="this.select(); document.execCommand('copy');">
+                                <span
+                                    class="absolute left-1/2 -translate-x-1/2 mt-2 px-2 py-1 text-xl text-white bg-neutral-800 rounded opacity-0 transition-opacity group-focus-within:opacity-100">
+                                    Copied!
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="relative group w-full">
+                                <input id="email" type="text" value="mutesawilly682@gmail.com"
+                                    class="hover:text-neutral-200 cursor-pointer text-left focus:outline-none appearance-none w-1/6"
+                                    onclick="this.select(); document.execCommand('copy');">
+                                <span
+                                    class="absolute left-1/2 -translate-x-1/2 mt-2 px-2 py-1 text-xl text-white bg-neutral-800 rounded opacity-0 transition-opacity group-focus-within:opacity-100">
+                                    Copied!
+                                </span>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -293,13 +313,16 @@
                         <p class="text-neutral-600 text-[28px] font-medium uppercase">Location</p>
                     </div>
                     <ul class="text-neutral-400 font-normal text-2xl ">
-                        <li>Rwanda Kigali, 3 KG 248 St</li>
+                        <li>
+                            <a href="https://www.google.com/maps/@-1.9532104,30.1045212,3a,75y,229.93h,84.86t/data=!3m7!1e1!3m5!1snvzkQKxBu-MPDdf0rnDQMA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D5.141759494037942%26panoid%3DnvzkQKxBu-MPDdf0rnDQMA%26yaw%3D229.93471205802763!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
+                                                    class="hover:text-neutral-200 appearance-none" target="_blank">Rwanda Kigali, 3 KG 248 St</a>
+                        </li>
                     </ul>
                 </div>
                 <a href="#" class="cursor-pointer flex h-10 items-center justify-center rounded-4xl border-neutral-700 border-1 px-[50px] py-[30px] text-neutral-100 bg-black">
-                    <p class="text-neutral-500 text-2xl">Download Resume</p>
+                    <p class="text-neutral-500 text-2xl hover:text-neutral-200">Download Resume</p>
                 </a>
-                <p class="text-neutral-600 text-2xl">© 2025 — Copyright</p>
+                <p class="text-neutral-600 text-2xl hover:text-neutral-200">© 2025 — Copyright</p>
             </div>
         </footer>
     </section>

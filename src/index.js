@@ -1,46 +1,32 @@
-// Get elements for buttons
-const Previous = document.getElementById("prev");
-const Next = document.getElementById("next");
-const PreviousHover = document.getElementById("prevHover");
-const NextHover = document.getElementById("nextHover");
+// // Get elements for buttons
+// const Previous = document.getElementById("prev");
+// const Next = document.getElementById("next");
+// const PreviousHover = document.getElementById("prevHover");
+// const NextHover = document.getElementById("nextHover");
 
-// Function to show the hover version of the Previous button
-function showPreviousScrollButton() {
-    PreviousHover.classList.remove("invisible");
-    PreviousHover.classList.add("visible");
-    Previous.classList.remove("visible");
-    Previous.classList.add("invisible");
-}
+// // Function to show the hover version of the Previous button
+// function showPreviousScrollButton() {
+//     PreviousHover.style.display = "flex";
+//     Previous.style.display = "none";
+// }
+// function hidePreviousScrollButton() {
+//     PreviousHover.style.display = "none";
+//     Previous.style.display = "flex";
+// }
 
-// Function to hide the hover version and show the normal Previous button
-function hidePreviousScrollButton() {
-    PreviousHover.classList.remove("visible");
-    PreviousHover.classList.add("invisible");
-    Previous.classList.remove("invisible");
-    Previous.classList.add("visible");
-}
-
-// Function to show the hover version of the Next button
-function showNextScrollButton() {
-    NextHover.classList.remove("invisible");
-    NextHover.classList.add("visible");
-    Next.classList.remove("visible");
-    Next.classList.add("invisible");
-}
-
-// Function to hide the hover version and show the normal Next button
-function hideNextScrollButton() {
-    NextHover.classList.remove("visible");
-    NextHover.classList.add("invisible");
-    Next.classList.remove("invisible");
-    Next.classList.add("visible");
-}
-
-// Event listeners to trigger the hover effect
-Previous.addEventListener("mouseover", showPreviousScrollButton);
-Previous.addEventListener("mouseleave", hidePreviousScrollButton);
-Next.addEventListener("mouseover", showNextScrollButton);
-Next.addEventListener("mouseleave", hideNextScrollButton);
+// function showNextScrollButton() {
+//     NextHover.style.display = "flex";
+//     Next.style.display = "none";
+// }
+// function hideNextScrollButton() {
+//     NextHover.style.display = "none";
+//     Next.style.display = "flex";
+// }
+// // Event listeners to trigger the hover effect
+// Previous.addEventListener("mouseenter", showPreviousScrollButton);
+// PreviousHover.addEventListener("mouseleave", hidePreviousScrollButton);
+// Next.addEventListener("mouseenter", showNextScrollButton);
+// NextHover.addEventListener("mouseleave", hideNextScrollButton);
 
 
 
@@ -54,3 +40,54 @@ document.addEventListener("mousemove", function (event) {
     scrollCursor.style.left = mouseX + 'px';
     scrollCursor.style.top = mouseY + 'px';
 });
+
+// Project Carousel Designed Here...
+const sections = document.querySelectorAll(".slide-section");
+const currentIndex = 0;
+const totalSections = sections.length;
+const prevButton = document.getElementById("prev");
+const nextButton = document.getElementById("next");
+const prevHover = document.getElementById("prevHover");
+const nextHover = document.getElementById("nextHover");
+
+function updateVisibility() {
+    sections.forEach((section, index) => {
+        section.style.display = index === currentIndex ? "flex" : "none";
+    });
+}
+
+function showPreviousScrollButton() {
+    currentIndex = (currentIndex - 1 + totalSections) % totalSections;
+    updateVisibility();
+}
+
+function showNextScrollButton() {
+    currentIndex = (currentIndex + 1) % totalSections;
+    updateVisibility();
+}
+
+// Add click event listeners to buttons
+prevHover.addEventListener("click", showPreviousScrollButton);
+nextHover.addEventListener("click", showNextScrollButton);
+
+// Add hover event listeners to show hover buttons
+prevButton.addEventListener("mouseover", () => {
+    prevHover.style.display = "flex";
+    prevButton.style.display = "none";
+});
+prevHover.addEventListener("mouseleave", () => {
+    prevHover.style.display = "none";
+    prevButton.style.display = "flex";
+});
+
+nextButton.addEventListener("mouseover", () => {
+    nextHover.style.display = "flex";
+    nextButton.style.display = "none";
+});
+nextHover.addEventListener("mouseleave", () => {
+    nextHover.style.display = "none";
+    nextButton.style.display = "flex";
+});
+
+// Initialize visibility on page load
+updateVisibility();
