@@ -13,45 +13,51 @@
     <!-- <div id="scrollCircle" class="transition-all absolute w-10 h-10 rounded-full text-neutral-200"></div> -->
     <section class="w-full h-screen bg-black overflow-y-scroll scrollbar-hide snap-y snap-mandatory scroll-smooth">
         <!-- The Index Page of the Portfolio Designed Here... -->
-        <section id="Index" class="bg-[#000000] h-screen px-[50px] py-[20px] flex flex-col justify-between backdrop-blur-sm grayscale snap-center">
-        
+        <section id="Index" class="relative bg-[#000000] h-screen flex flex-col justify-between snap-center">
+            <img src="./images/project 1.jpg" alt="Project One" class="w-full h-full scale-auto flex flex-col justify-between items-stretch grayscale-25" />
             <!-- The Navigation Bar and All Nested Elements... -->
-            <nav class="flex items-center justify-between pt-[15px]">
-                <h1 class="cursor-pointer font-bold text-[28px] text-stone-400">_WM</h1>
+            <nav class="absolute z-10 top-0 left-0 flex items-center justify-between pt-[35px] w-full px-[50px]">
+                <h1 class="cursor-pointer font-bold text-[28px] text-stone-400">IAMWILLY</h1>
                 <div class="flex items-stretch justify-between flex-row gap-x-[20px]">
-                    <h3 class=" text-[28px] text-stone-600 font-medium"><a class="decoration-0" href="./index.html">Index</a></h3>
-                    <h3 class=" text-[28px] text-stone-400 font-medium"><a class="decoration-0" href="/src/profile.html">Profile</a></h3>
+                    <h3 class="z-10 text-[28px] text-stone-400 font-medium cursor-pointer"><a class="decoration-0" href="./index.html">Index</a></h3>
+                    <h3 class="z-10 text-[28px] text-stone-300 font-medium cursor-pointer"><a class="decoration-0" href="/src/profile.html">Profile</a></h3>
                 </div>
             </nav>
         
             <!-- The Home Page Designed Here... -->
-            <div class="flex flex-col size-auto items-stretch justify-between gap-y-[40px]">
-                <h1 class="text-9xl text-stone-400 font-semibold uppercase text-ellipsis tracking-wide w-[85%]">
-                    A Creative Web 
-                    Designer & Developer</h1>
-                <h2 class="text-4xl text-stone-600 font-normal capitalize">Work hard, learn always, even Google started
-                    small!</h2>
+            <div class="absolute z-10 w-full inset-x-0 top-[50%] flex flex-col items-stretch justify-center px-[50px]">
+                <h1 class="text-[80px] text-stone-200 font-bold uppercase tracking-tighter">A Creative Web  Designer & Developer</h1>
+                <h2 class="text-[32px] text-stone-200 font-light capitalize tracking-tighter">Recent Contribution: Portfolio Website, Interactive UI Prototype, Social Media Content Management Strategy</h2>
             </div>
         
             <!-- The Footer of the Home Page Designed Here... -->
-            <div class="flex flex-row items-center justify-between">
+            <div class="absolute bottom-0 left-0 inset-x-0 w-full px-[50px] py-[20px] flex flex-row items-end justify-between">
                 <a href="#Skills" class="flex flex-row items-center justify-between gap-x-[10px]">
-                    <svg class="animate-bounce stroke-current text-stone-600 stroke-3 size-7" xmlns="http://www.w3.org/2000/svg"
+                    <svg class="animate-bounce stroke-current text-stone-400 stroke-3 size-7" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
                     </svg>
-                    <p class="cursor-pointer capitalize text-stone-600 text-[24px] font-medium py-[20px]">Scroll to explore</p>
+                    <p class="cursor-pointer capitalize text-stone-400 text-[24px] font-medium">Scroll to explore</p>
                 </a>
-                <p class="cursor-pointer text-stone-600 font-medium text-[24px] capitalize">Expertise</p>
+                <p class="cursor-pointer text-stone-400 font-medium text-[24px] capitalize">Expertise</p>
             </div>
         
         </section>
         
         <!-- The Core Capabilities and Services Page Designed Here... -->
-        <section id="Skills" class="h-screen w-full bg-neutral-900 p-[50px] flex flex-row items-center justify-between snap-center">
-            <h1 class="text-stone-400 text-9xl font-medium w-[45%] capitalize text-left">Core Capabilities and Services</h1>
-            <div id="rightScroll" class="scroll-smooth snap-y snap-mandatory w-[50%] flex flex-col p-[50px] h-full overflow-y-scroll scrollbar-hide">
-                <div class="flex container h-full md:w-full hover:bg-neutral-800 py-[75px] px-[45px] gap-x-[40px] snap-center">
+        <section id="Skills" class="h-screen w-full bg-neutral-900 p-[100px] flex flex-row items-center justify-between snap-center">
+            <div class="w-[45%] flex flex-col gap-y-[50px]">
+                <h1 class="text-stone-400 text-9xl font-medium capitalize text-left">Core Capabilities and Services</h1>
+                <div class="flex flex-row items-center gap-x-[10px]">
+                    <svg class="stroke-current text-stone-400 stroke-3 size-7" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                    </svg>
+                    <p class="cursor-pointer capitalize text-stone-400 text-[24px] font-medium">Scroll the Right Section to Explore More</p>
+                </div>
+            </div>
+            <div id="rightScroll" class="w-[45%] flex flex-col py-[50px] h-full overflow-y-scroll scrollbar-hide scroll-smooth snap-y snap-mandatory ">
+                <div class="flex container h-full md:w-full hover:bg-neutral-800 py-[55px] px-[30px] gap-x-[40px] snap-center">
                     <p class="text-4xl font-medium text-neutral-400 uppercase hidden md:block">01</p>
                     <div class="flex flex-col items-stretch justify-between gap-y-[20px]">
                         <p class="text-4xl text-neutral-400 capitalize font-medium">Web Design</p>
@@ -61,7 +67,7 @@
                             suggesting improvements.</p>
                     </div>
                 </div>
-                <div class="flex container h-full md:w-full hover:bg-neutral-800 py-[75px] px-[45px] gap-x-[40px] snap-center">
+                <div class="flex container h-full md:w-full hover:bg-neutral-800 py-[55px] px-[30px] gap-x-[40px] snap-center">
                     <p class="text-4xl font-medium text-neutral-400 uppercase hidden md:block">02</p>
                     <div class="flex flex-col items-stretch justify-between gap-y-[20px]">
                         <p class="text-4xl text-neutral-400 capitalize font-medium">Creative Coding</p>
@@ -69,7 +75,7 @@
                         Currently, he is focused on setting up a WordPress environment with Docker and regularly uploads his code to GitHub.</p>
                     </div>
                 </div>
-                <div class="flex container h-full md:w-full hover:bg-neutral-800 py-[75px] px-[45px] gap-x-[40px] snap-center">
+                <div class="flex container h-full md:w-full hover:bg-neutral-800 py-[55px] px-[30px] gap-x-[40px] snap-center">
                     <p class="text-4xl font-medium text-neutral-400 uppercase hidden md:block">03</p>
                     <div class="flex flex-col items-stretch justify-between gap-y-[20px]">
                         <p class="text-4xl text-neutral-400 capitalize font-medium">Scholarly Writing</p>
@@ -78,7 +84,7 @@
                         creativity, and impact to every project.</p>
                     </div>
                 </div>
-                <div class="flex container h-full md:w-full hover:bg-neutral-800 py-[75px] px-[45px] gap-x-[40px] snap-center">
+                <div class="flex container h-full md:w-full hover:bg-neutral-800 py-[55px] px-[30px] gap-x-[40px] snap-center">
                     <p class="text-4xl font-medium text-neutral-400 uppercase hidden md:block">04</p>
                     <div class="flex flex-col items-stretch justify-between gap-y-[20px]">
                         <p class="text-4xl text-neutral-400 capitalize font-medium">Computer Aided Design</p>

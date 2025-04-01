@@ -14,13 +14,3 @@
   -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
   scrollbar-width: none;  /* Hide scrollbar for Firefox */
 }
-/* Tailwind CSS for autofill inputs */
-/* input:-webkit-autofill { */
-  /* background-color: transparent !important; remove background color */
-  /* color: inherit !important; ensure text color is consistent */
-/* } */
-
-/* Adjusts autofilled text for better consistency */
-input:-webkit-autofill::first-line {
-  color: inherit !important; /* ensures the autofill text color matches */
-}

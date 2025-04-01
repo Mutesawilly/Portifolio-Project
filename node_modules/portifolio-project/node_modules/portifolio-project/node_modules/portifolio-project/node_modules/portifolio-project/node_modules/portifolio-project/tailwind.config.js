@@ -7,3 +7,4 @@ export default {
         require("tailwind-scrollbar-hide")
     ],
  }
+ 
