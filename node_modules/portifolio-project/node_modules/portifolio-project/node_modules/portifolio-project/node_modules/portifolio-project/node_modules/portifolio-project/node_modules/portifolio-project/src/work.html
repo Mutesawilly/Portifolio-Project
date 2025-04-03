@@ -11,14 +11,14 @@
 
 <body class="bg-black">
     <!-- The Index Page of the Portfolio Designed Here... -->
-    <section class="bg-black w-full h-screen overflow-y-scroll scrollbar-hide flex flex-col backdrop-blur-sm snap-y snap-mandatory scroll-smooth">
+    <section class="bg-neutral-900 w-full h-screen overflow-y-scroll scrollbar-hide flex flex-col backdrop-blur-sm snap-y snap-mandatory scroll-smooth">
         <section id="Achievements" class="w-full min-h-screen flex flex-col flex-grow items-stretch justify-between py-[20px] px-[50px] snap-center">
             <!-- The Navigation Bar and All Nested Elements... -->
             <nav class="flex items-center justify-between pt-[15px]">
                 <h1 class="font-bold text-[28px] text-stone-400">_WM</h1>
                 <div class="flex items-stretch justify-between flex-row gap-x-[20px]">
                     <h3 class="text-[28px] text-stone-600 font-medium"><a class="decoration-0"
-                            href="./index.html">Profile</a></h3>
+                            href="./portifolio.html">Profile</a></h3>
                     <h3 class="text-[28px] text-stone-400 font-medium"><a class="decoration-0"
                             href="/src/work.html">Work</a>
                     </h3>
@@ -27,15 +27,14 @@
     
             <!-- The Home Page Designed Here... -->
             <div class="w-full flex flex-col size-auto items-center justify-center gap-y-[30px]">
-                <h1
-                    class="text-4xl sm:text-6xl md:text-[110px] text-stone-400 font-semibold w-[80%] uppercase text-ellipsis tracking-wide text-center">
+                <h1 class="text-4xl sm:text-6xl md:text-[130px] text-stone-400 font-bold uppercase text-ellipsis tracking-wide text-center">
                     Demonstration of our Work in Action</h1>
             </div>
     
             <!-- The Footer of the Home Page Designed Here... -->
             <div class="flex flex-row items-center justify-between">
                 <p class="text-stone-600 text-[24px] font-medium py-[20px] uppercase">Design</p>
-                <a href="#About"
+                <a href="#project"
                     class="cursor-pointer flex items-center justify-center bg-neutral-800 h-15 w-15 rounded-full animate-bounce">
                     <svg class="stroke-current text-stone-500 stroke-2 size-7" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24">
@@ -47,30 +46,85 @@
         </section>
 
         <!-- Project Slides Designed From Here... -->
-        <section class="relative flex flex-col items-stretch justify-between w-full h-full snap-center">
-            <img src="./images/project 2.jpg" alt="project 1" class="bg-neutral-600 w-full h-screen object-cover">
-            <div class="absolute w-full text-3xl text-white p-[50px]">
-                <h1>2025</h1>
-            </div>
-            <div class="absolute top-1/3 flex flex-col items-center justify-center w-full gap-y-[30px]">
-                <p class="text-neutral-50 text-[120px] tracking-wider font-bold">Personal Portifolio</p>
-                <div class="flex items-stretch justify-center gap-x-[15px]">
-                    <div class="hover:text-neutral-50 flex h-10 items-center justify-center rounded-4xl border-white border-1 px-[50px] py-[30px] text-white">
-                        <p class="cursor-pointer text-neutral-50 text-2xl">Website Design</p>
-                    </div>
-                    <div
-                        class="hover:text-neutral-50 flex h-10 items-center justify-center rounded-4xl border-white border-1 px-[50px] py-[30px] text-white">
-                        <p class="cursor-pointer text-neutral-50 text-2xl">Branding</p>
-                    </div>
-                    <div
-                        class="hover:text-neutral-50 flex h-10 items-center justify-center rounded-4xl border-white border-1 px-[50px] py-[30px] text-white">
-                        <p class="cursor-pointer text-neutral-50 text-2xl">Website Development</p>
+        <section id="project" class="w-screen h-screen flex overflow-x-scroll snap-center scrollbar-hide shrink-0 snap-x snap-mandatory">
+            <section class="relative flex flex-col shrink-0 items-stretch justify-between w-screen h-full snap-center transition-all duration-500 ease-in">
+                <img src="./images/project 2.jpg" alt="project 1" class="bg-neutral-600 w-full h-screen object-cover">
+                <div class="absolute w-full text-3xl text-white p-[50px] flex gap-x-[20px] items-center justify-start">
+                    <h1>2025</h1>
+                </div>
+                <div class="absolute top-1/3 flex flex-col items-center justify-center w-full gap-y-[30px]">
+                    <p class="text-neutral-50 text-[120px] tracking-wider font-bold cursor-pointer">Personal Portifolio</p>
+                    <div class="flex items-stretch justify-center gap-x-[15px]">
+                        <div
+                            class="hover:text-neutral-50 flex h-10 items-center justify-center rounded-4xl border-white border-1 px-[50px] py-[30px] text-white">
+                            <p class="cursor-pointer text-neutral-50 text-2xl">Website Design</p>
+                        </div>
+                        <div
+                            class="hover:text-neutral-50 flex h-10 items-center justify-center rounded-4xl border-white border-1 px-[50px] py-[30px] text-white">
+                            <p class="cursor-pointer text-neutral-50 text-2xl">Branding</p>
+                        </div>
+                        <div
+                            class="hover:text-neutral-50 flex h-10 items-center justify-center rounded-4xl border-white border-1 px-[50px] py-[30px] text-white">
+                            <p class="cursor-pointer text-neutral-50 text-2xl">Website Development</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="absolute bottom-0 right-0 w-full flex items-end justify-end px-[50px] py-[20px]">
-                <h1 class="text-3xl text-white">Scroll or Drag</h1>
-            </div>
+                <div class="absolute bottom-0 right-0 w-full flex items-center gap-x-[20px] justify-end px-[50px] py-[20px]">
+                    <div class="flex justify-center items-center size-10 rounded-full border-neutral-100 border-2">
+                        <svg class="rotate-270 stroke-current text-neutral-100 stroke-2 size-5" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                        </svg>
+                    </div>
+                </div>
+            </section>
+            <section class="relative flex flex-col shrink-0 items-stretch justify-between w-screen h-full snap-center transition-all duration-500 ease-in">
+                <img src="./images/project 3.jpg" alt="project 1" class="bg-neutral-600 w-full h-screen object-cover">
+                <div class="absolute w-full text-3xl text-white p-[50px]">
+                    <h1>2025</h1>
+                </div>
+                <div class="absolute top-1/3 flex flex-col items-center justify-center w-full gap-y-[30px]">
+                    <p class="text-neutral-50 text-[120px] tracking-wider font-bold cursor-pointer">Hyper Grid Labs</p>
+                    <div class="flex items-stretch justify-center gap-x-[15px]">
+                        <div class="hover:text-neutral-50 flex h-10 items-center justify-center rounded-4xl border-white border-1 px-[50px] py-[30px] text-white">
+                            <p class="cursor-pointer text-neutral-50 text-2xl">Branding</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute bottom-0 right-0 w-full flex items-end justify-end px-[50px] py-[20px]">
+                    <div class="flex justify-center items-center size-10 rounded-full border-neutral-100 border-2">
+                        <svg class="rotate-270 stroke-current text-neutral-100 stroke-2 size-5" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                        </svg>
+                    </div>
+                </div>
+            </section>
+            <section class="relative flex flex-col shrink-0 items-stretch justify-between w-screen h-full snap-center transition-all duration-500 ease-in">
+                <img src="./images/Project Four.jpg" alt="project 1" class="bg-neutral-600 w-full h-screen object-cover">
+                <div class="absolute w-full text-3xl text-white p-[50px]">
+                    <h1>2025</h1>
+                </div>
+                <div class="absolute top-1/3 flex flex-col items-center justify-center w-full gap-y-[30px]">
+                    <p class="text-neutral-50 text-[120px] tracking-wider font-bold cursor-pointer">Nova Designs</p>
+                    <div class="flex items-stretch justify-center gap-x-[15px]">
+                        <div class="hover:text-neutral-50 flex h-10 items-center justify-center rounded-4xl border-white border-1 px-[50px] py-[30px] text-white">
+                            <p class="cursor-pointer text-neutral-50 text-2xl">Website Design</p>
+                        </div>
+                        <div class="hover:text-neutral-50 flex h-10 items-center justify-center rounded-4xl border-white border-1 px-[50px] py-[30px] text-white">
+                            <p class="cursor-pointer text-neutral-50 text-2xl">Branding</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute bottom-0 right-0 w-full flex items-end justify-end px-[50px] py-[20px]">
+                    <div class="flex justify-center items-center size-10 rounded-full border-neutral-100 border-2">
+                        <svg class="rotate-90 stroke-current text-neutral-100 stroke-2 size-5" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                        </svg>
+                    </div>
+                </div>
+            </section>
         </section>
 
     </section>
