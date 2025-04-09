@@ -549,6 +549,9 @@
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
+  .h-\[75\%\] {
+    height: 75%;
+  }
   .h-\[85\%\] {
     height: 85%;
   }
@@ -1201,6 +1204,9 @@
   }
   .rounded-4xl {
     border-radius: var(--radius-4xl);
+  }
+  .rounded-\[100px\] {
+    border-radius: 100px;
   }
   .rounded-\[150px\] {
     border-radius: 150px;
