@@ -620,6 +620,9 @@
   .w-\[65\%\] {
     width: 65%;
   }
+  .w-\[85\%\] {
+    width: 85%;
+  }
   .w-fit {
     width: fit-content;
   }
