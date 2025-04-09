@@ -549,6 +549,9 @@
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
+  .h-\[60\%\] {
+    height: 60%;
+  }
   .h-\[75\%\] {
     height: 75%;
   }
