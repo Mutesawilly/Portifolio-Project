@@ -297,8 +297,14 @@
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
+  .right-\[30px\] {
+    right: 30px;
+  }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
+  }
+  .bottom-\[30px\] {
+    bottom: 30px;
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
@@ -308,6 +314,9 @@
   }
   .left-1\/2 {
     left: calc(1/2 * 100%);
+  }
+  .left-\[30px\] {
+    left: 30px;
   }
   .isolate {
     isolation: isolate;
