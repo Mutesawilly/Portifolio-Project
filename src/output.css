@@ -318,6 +318,9 @@
   .left-\[30px\] {
     left: 30px;
   }
+  .left-\[45\%\] {
+    left: 45%;
+  }
   .isolate {
     isolation: isolate;
   }
