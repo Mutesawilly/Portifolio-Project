@@ -40,7 +40,6 @@
     --text-6xl--line-height: 1;
     --text-9xl: 8rem;
     --text-9xl--line-height: 1;
-    --font-weight-light: 300;
     --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
@@ -265,9 +264,6 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
-  .top-1 {
-    top: calc(var(--spacing) * 1);
-  }
   .top-1\/3 {
     top: calc(1/3 * 100%);
   }
@@ -277,12 +273,6 @@
   .top-\[60\%\] {
     top: 60%;
   }
-  .top-\[65\%\] {
-    top: 65%;
-  }
-  .top-\[70\%\] {
-    top: 70%;
-  }
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
@@ -291,9 +281,6 @@
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
-  }
-  .left-1 {
-    left: calc(var(--spacing) * 1);
   }
   .left-1\/2 {
     left: calc(1/2 * 100%);
@@ -563,9 +550,6 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -700,10 +684,6 @@
   .translate-full {
     --tw-translate-x: 100%;
     --tw-translate-y: 100%;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .-translate-x-1 {
-    --tw-translate-x: calc(var(--spacing) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-x-1\/2 {
@@ -1367,14 +1347,8 @@
     --tw-gradient-position: in oklab;
     background-image: radial-gradient(var(--tw-gradient-stops));
   }
-  .bg-\[url\(\'\.\/images\/DV-Home-Hero-Image\'\)\] {
-    background-image: url('./images/DV-Home-Hero-Image');
-  }
   .bg-\[url\(\'\.\/images\/DV-Home-Hero-Image\.jpg\'\)\] {
     background-image: url('./images/DV-Home-Hero-Image.jpg');
-  }
-  .bg-\[url\(\)\] {
-    background-image: url();
   }
   .bg-none {
     background-image: none;
@@ -1499,9 +1473,6 @@
   }
   .stroke-white {
     stroke: var(--color-white);
-  }
-  .stroke-1 {
-    stroke-width: 1;
   }
   .stroke-2 {
     stroke-width: 2;
@@ -1673,9 +1644,6 @@
   .text-\[32px\] {
     font-size: 32px;
   }
-  .text-\[48px\] {
-    font-size: 48px;
-  }
   .text-\[54px\] {
     font-size: 54px;
   }
@@ -1696,10 +1664,6 @@
   .font-extrabold {
     --tw-font-weight: var(--font-weight-extrabold);
     font-weight: var(--font-weight-extrabold);
-  }
-  .font-light {
-    --tw-font-weight: var(--font-weight-light);
-    font-weight: var(--font-weight-light);
   }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
@@ -1994,9 +1958,6 @@
   }
   .opacity-70 {
     opacity: 70%;
-  }
-  .opacity-90 {
-    opacity: 90%;
   }
   .mix-blend-plus-darker {
     mix-blend-mode: plus-darker;
