@@ -1140,6 +1140,9 @@
   .gap-y-\[50px\] {
     row-gap: 50px;
   }
+  .gap-y-\[100px\] {
+    row-gap: 100px;
+  }
   .divide-x {
     :where(& > :not(:last-child)) {
       --tw-divide-x-reverse: 0;
@@ -1672,6 +1675,12 @@
   }
   .pt-\[20px\] {
     padding-top: 20px;
+  }
+  .pt-\[100px\] {
+    padding-top: 100px;
+  }
+  .pb-\[50px\] {
+    padding-bottom: 50px;
   }
   .text-center {
     text-align: center;
