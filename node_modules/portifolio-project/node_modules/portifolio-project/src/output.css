@@ -1810,6 +1810,10 @@
   .text-\[120px\] {
     font-size: 120px;
   }
+  .leading-5 {
+    --tw-leading: calc(var(--spacing) * 5);
+    line-height: calc(var(--spacing) * 5);
+  }
   .leading-none {
     --tw-leading: 1;
     line-height: 1;
