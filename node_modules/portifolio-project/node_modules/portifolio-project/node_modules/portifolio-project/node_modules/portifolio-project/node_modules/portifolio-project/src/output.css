@@ -1063,6 +1063,9 @@
   .justify-items-stretch {
     justify-items: stretch;
   }
+  .gap-\[8px\] {
+    gap: 8px;
+  }
   .gap-\[15px\] {
     gap: 15px;
   }
@@ -1096,6 +1099,9 @@
   }
   .gap-y-\[5px\] {
     row-gap: 5px;
+  }
+  .gap-y-\[8px\] {
+    row-gap: 8px;
   }
   .gap-y-\[10px\] {
     row-gap: 10px;
