@@ -1582,6 +1582,9 @@
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
+  .py-\[15px\] {
+    padding-block: 15px;
+  }
   .py-\[20px\] {
     padding-block: 20px;
   }
