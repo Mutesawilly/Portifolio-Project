@@ -1984,6 +1984,9 @@
   .opacity-0 {
     opacity: 0%;
   }
+  .opacity-90 {
+    opacity: 90%;
+  }
   .mix-blend-plus-darker {
     mix-blend-mode: plus-darker;
   }
