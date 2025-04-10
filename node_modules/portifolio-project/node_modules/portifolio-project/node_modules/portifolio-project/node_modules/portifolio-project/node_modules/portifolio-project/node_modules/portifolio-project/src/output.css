@@ -285,6 +285,9 @@
   .top-\[0\%\] {
     top: 0%;
   }
+  .top-\[40\%\] {
+    top: 40%;
+  }
   .top-\[50\%\] {
     top: 50%;
   }
@@ -320,6 +323,9 @@
   }
   .left-\[45\%\] {
     left: 45%;
+  }
+  .left-\[55\%\] {
+    left: 55%;
   }
   .isolate {
     isolation: isolate;
