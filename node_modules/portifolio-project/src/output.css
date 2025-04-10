@@ -273,6 +273,9 @@
   .top-10 {
     top: calc(var(--spacing) * 10);
   }
+  .top-\[60\%\] {
+    top: 60%;
+  }
   .top-\[70\%\] {
     top: 70%;
   }
