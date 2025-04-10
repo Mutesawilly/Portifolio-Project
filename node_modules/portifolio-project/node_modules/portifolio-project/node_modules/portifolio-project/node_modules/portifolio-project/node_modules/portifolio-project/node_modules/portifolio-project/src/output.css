@@ -670,6 +670,9 @@
   .w-\[70\%\] {
     width: 70%;
   }
+  .w-\[80\%\] {
+    width: 80%;
+  }
   .w-fit {
     width: fit-content;
   }
