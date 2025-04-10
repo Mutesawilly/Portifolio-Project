@@ -1341,6 +1341,9 @@
   .bg-\[url\(\'\.\/images\/DV-Home-Hero-Image\'\)\] {
     background-image: url('./images/DV-Home-Hero-Image');
   }
+  .bg-\[url\(\'\.\/images\/DV-Home-Hero-Image\.jpg\'\)\] {
+    background-image: url('./images/DV-Home-Hero-Image.jpg');
+  }
   .bg-\[url\(\)\] {
     background-image: url();
   }
