@@ -1308,6 +1308,12 @@
   .bg-\[url\(\'\.\/images\/DV-Home-Hero-Image\.jpg\'\)\] {
     background-image: url('./images/DV-Home-Hero-Image.jpg');
   }
+  .bg-\[url\(\'\.\/images\/istock\'\)\] {
+    background-image: url('./images/istock');
+  }
+  .bg-\[url\(\'\.\/images\/istock\.jpg\'\)\] {
+    background-image: url('./images/istock.jpg');
+  }
   .bg-none {
     background-image: none;
   }
