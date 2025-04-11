@@ -1175,6 +1175,10 @@
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
   }
+  .border-t-1 {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
   .border-r {
     border-right-style: var(--tw-border-style);
     border-right-width: 1px;
@@ -1221,6 +1225,9 @@
   }
   .border-black {
     border-color: var(--color-black);
+  }
+  .border-neutral-600 {
+    border-color: var(--color-neutral-600);
   }
   .border-neutral-700 {
     border-color: var(--color-neutral-700);
@@ -1468,6 +1475,12 @@
   }
   .py-\[30px\] {
     padding-block: 30px;
+  }
+  .py-\[50px\] {
+    padding-block: 50px;
+  }
+  .py-\[100px\] {
+    padding-block: 100px;
   }
   .pt-\[20px\] {
     padding-top: 20px;
