@@ -384,6 +384,9 @@
       max-width: 96rem !important;
     }
   }
+  .m-\[30px\] {
+    margin: 30px;
+  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -1467,6 +1470,9 @@
   .p-\[20px\] {
     padding: 20px;
   }
+  .p-\[30px\] {
+    padding: 30px;
+  }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
@@ -1708,6 +1714,9 @@
   }
   .text-neutral-600 {
     color: var(--color-neutral-600);
+  }
+  .text-neutral-800 {
+    color: var(--color-neutral-800);
   }
   .text-stone-100 {
     color: var(--color-stone-100);
