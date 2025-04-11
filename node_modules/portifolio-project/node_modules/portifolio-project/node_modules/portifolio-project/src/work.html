@@ -25,7 +25,8 @@
                     creativity and excellence.
                 </p>
             </div>        
-            <h1 class="absolute top-[40%] left-[50%] text-neutral-400 text-[16px] font-medium">CODE - DESIGN - CREATE</h1>
+            <h1 class="absolute left-[50%] text-[16px] text-neutral-400 font-mono" id="clock">--:--:--</h1>
+            <h1 class="absolute top-[40%] left-[50%] text-neutral-400 text-[16px] font-normal">CODE - DESIGN - CREATE</h1>
             <div class="flex flex-col justify-between items-stretch h-full pb-[30px]">
                 <div class="flex flex-col text-right text-neutral-400 gap-y-[10px]">
                     <h1 class="text-neutral-100 text-[14px] font-medium">Skills</h1>
@@ -59,16 +60,71 @@
                 </div>
                 <div class="flex flex-col text-right text-neutral-400 gap-y-[10px]">
                     <h1 class="text-neutral-100 text-[14px] font-medium">Quick Links</h1>
-                    <div class="flex flex-col">
-                        <p class="text-[12px]">Projects</p>
-                        <p class="text-[12px]">Linkedin</p>
-                        <p class="text-[12px]">GitHub</p>
-                        <p class="text-[12px]">Instagram</p>
+                    <div class="flex flex-col items-end">
+                        <a href="./index.html" class="flex gap-x-[10px] items-center">
+                            <p class="text-[12px]">Works</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-3">
+                                <path fill-rule="evenodd"
+                                    d="M4.25 5.5a.75.75 0 0 0-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 0 0 .75-.75v-4a.75.75 0 0 1 1.5 0v4A2.25 2.25 0 0 1 12.75 17h-8.5A2.25 2.25 0 0 1 2 14.75v-8.5A2.25 2.25 0 0 1 4.25 4h5a.75.75 0 0 1 0 1.5h-5Z"
+                                    clip-rule="evenodd" />
+                                <path fill-rule="evenodd"
+                                    d="M6.194 12.753a.75.75 0 0 0 1.06.053L16.5 4.44v2.81a.75.75 0 0 0 1.5 0v-4.5a.75.75 0 0 0-.75-.75h-4.5a.75.75 0 0 0 0 1.5h2.553l-9.056 8.194a.75.75 0 0 0-.053 1.06Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/Mutesawilly" class="flex gap-x-[10px] items-center">
+                            <p class="text-[12px]">GitHub</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-3">
+                                <path fill-rule="evenodd"
+                                    d="M4.25 5.5a.75.75 0 0 0-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 0 0 .75-.75v-4a.75.75 0 0 1 1.5 0v4A2.25 2.25 0 0 1 12.75 17h-8.5A2.25 2.25 0 0 1 2 14.75v-8.5A2.25 2.25 0 0 1 4.25 4h5a.75.75 0 0 1 0 1.5h-5Z"
+                                    clip-rule="evenodd" />
+                                <path fill-rule="evenodd"
+                                    d="M6.194 12.753a.75.75 0 0 0 1.06.053L16.5 4.44v2.81a.75.75 0 0 0 1.5 0v-4.5a.75.75 0 0 0-.75-.75h-4.5a.75.75 0 0 0 0 1.5h2.553l-9.056 8.194a.75.75 0 0 0-.053 1.06Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/willy-mutesa-683b47278/" class="flex gap-x-[10px] items-center">
+                            <p class="text-[12px]">LinkedIn</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-3">
+                                <path fill-rule="evenodd"
+                                    d="M4.25 5.5a.75.75 0 0 0-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 0 0 .75-.75v-4a.75.75 0 0 1 1.5 0v4A2.25 2.25 0 0 1 12.75 17h-8.5A2.25 2.25 0 0 1 2 14.75v-8.5A2.25 2.25 0 0 1 4.25 4h5a.75.75 0 0 1 0 1.5h-5Z"
+                                    clip-rule="evenodd" />
+                                <path fill-rule="evenodd"
+                                    d="M6.194 12.753a.75.75 0 0 0 1.06.053L16.5 4.44v2.81a.75.75 0 0 0 1.5 0v-4.5a.75.75 0 0 0-.75-.75h-4.5a.75.75 0 0 0 0 1.5h2.553l-9.056 8.194a.75.75 0 0 0-.053 1.06Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/mutesawilly/" class="flex gap-x-[10px] items-center">
+                            <p class="text-[12px]">Instagram</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-3">
+                                <path fill-rule="evenodd"
+                                    d="M4.25 5.5a.75.75 0 0 0-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 0 0 .75-.75v-4a.75.75 0 0 1 1.5 0v4A2.25 2.25 0 0 1 12.75 17h-8.5A2.25 2.25 0 0 1 2 14.75v-8.5A2.25 2.25 0 0 1 4.25 4h5a.75.75 0 0 1 0 1.5h-5Z"
+                                    clip-rule="evenodd" />
+                                <path fill-rule="evenodd"
+                                    d="M6.194 12.753a.75.75 0 0 0 1.06.053L16.5 4.44v2.81a.75.75 0 0 0 1.5 0v-4.5a.75.75 0 0 0-.75-.75h-4.5a.75.75 0 0 0 0 1.5h2.553l-9.056 8.194a.75.75 0 0 0-.053 1.06Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
     </section>    
 </body>
-
 </html>
+<script defer>
+    function updateTime() {
+        const now = new Date();
+        const options = {
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+            hour12: true,
+            timeZone: 'GMT'
+        };
+        document.getElementById("clock").textContent = now.toLocaleTimeString('en-GB', options) + ' GMT';
+    }
+
+    setInterval(updateTime, 1000);
+    window.onload = updateTime;
+</script>
