@@ -675,8 +675,23 @@
   .scale-none {
     scale: none;
   }
+  .rotate-90 {
+    rotate: 90deg;
+  }
   .rotate-180 {
     rotate: 180deg;
+  }
+  .rotate-270 {
+    rotate: 270deg;
+  }
+  .rotate-\[-90\] {
+    rotate: -90;
+  }
+  .rotate-\[90\] {
+    rotate: 90;
+  }
+  .rotate-\[270\] {
+    rotate: 270;
   }
   .rotate-none {
     rotate: none;
@@ -1515,6 +1530,9 @@
   }
   .pt-\[20px\] {
     padding-top: 20px;
+  }
+  .pt-\[30px\] {
+    padding-top: 30px;
   }
   .pt-\[50px\] {
     padding-top: 50px;
