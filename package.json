@@ -11,7 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "@tailwindcss/cli": "^4.0.14",
-    "portifolio-project": "file:",
-    "tailwindcss": "^4.0.14"
+    "portifolio-project": "file:"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.0.0"
   }
 }
