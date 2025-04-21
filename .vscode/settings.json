@@ -4,5 +4,6 @@
     "javascript": "javascript"
   },
   "tailwindCSS.emmetCompletions": true,
-  "tailwindCSS.experimental.configFile": "./tailwind.config.js"
+  "tailwindCSS.experimental.configFile": "./tailwind.config.js",
+  "liveServer.settings.port": 5501
 }
