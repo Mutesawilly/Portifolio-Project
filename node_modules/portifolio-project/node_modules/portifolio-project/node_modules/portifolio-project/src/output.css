@@ -1304,14 +1304,29 @@
   .border-neutral-700 {
     border-color: var(--color-neutral-700);
   }
+  .border-t-\[\#2d2d2d\] {
+    border-top-color: #2d2d2d;
+  }
   .border-t-neutral-400 {
     border-top-color: var(--color-neutral-400);
+  }
+  .border-t-neutral-800 {
+    border-top-color: var(--color-neutral-800);
+  }
+  .border-t-neutral-900 {
+    border-top-color: var(--color-neutral-900);
   }
   .border-b-\[\#2d2d2d\] {
     border-bottom-color: #2d2d2d;
   }
   .border-b-neutral-400 {
     border-bottom-color: var(--color-neutral-400);
+  }
+  .border-b-neutral-800 {
+    border-bottom-color: var(--color-neutral-800);
+  }
+  .border-b-neutral-900 {
+    border-bottom-color: var(--color-neutral-900);
   }
   .bg-\(--my_variable\) {
     background-color: var(--my_variable);
@@ -2331,6 +2346,13 @@
     &:hover {
       @media (hover: hover) {
         background-color: #1a1a1a;
+      }
+    }
+  }
+  .hover\:bg-neutral-900 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-neutral-900);
       }
     }
   }
