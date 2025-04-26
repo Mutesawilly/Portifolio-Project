@@ -1022,6 +1022,9 @@
   .gap-y-\[30px\] {
     row-gap: 30px;
   }
+  .gap-y-\[50px\] {
+    row-gap: 50px;
+  }
   .gap-y-\[100px\] {
     row-gap: 100px;
   }
@@ -1491,6 +1494,9 @@
   }
   .py-\[20px\] {
     padding-block: 20px;
+  }
+  .py-\[30px\] {
+    padding-block: 30px;
   }
   .pt-\[20px\] {
     padding-top: 20px;
