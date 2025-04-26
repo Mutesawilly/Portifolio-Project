@@ -2357,6 +2357,11 @@
       column-gap: 100px;
     }
   }
+  .lg\:gap-y-\[15px\] {
+    @media (width >= 64rem) {
+      row-gap: 15px;
+    }
+  }
   .lg\:text-left {
     @media (width >= 64rem) {
       text-align: left;
